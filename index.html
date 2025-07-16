@@ -9,14 +9,16 @@
   </head>
   <body class="bg-gray-100">
     <!-- Nav Bar -->
-    <div class="w-full flex justify-center pt-6">
+    <div class="w-full flex justify-center pt-4 sm:pt-6">
       <div
-        class="bg-white/90 shadow-sm rounded-full flex items-center px-9 py-3 w-[95%] max-w-5xl"
+        class="bg-white/90 shadow-sm rounded-full flex flex-col sm:flex-row items-center px-4 sm:px-9 py-2 sm:py-3 w-[98%] sm:w-[95%] max-w-full sm:max-w-5xl"
       >
-        <span class="font-bold text-2xl text-gray-900"
+        <span class="font-bold text-xl sm:text-2xl text-gray-900"
           >Acme<span class="text-indigo-500 align-super text-xs">•</span></span
         >
-        <nav class="ml-auto flex gap-8 items-center">
+        <nav
+          class="mt-2 sm:mt-0 sm:ml-auto flex flex-col sm:flex-row gap-2 sm:gap-8 items-center w-full sm:w-auto"
+        >
           <a
             href="#"
             class="text-indigo-600 font-medium underline underline-offset-8"
@@ -31,66 +33,80 @@
 
     <!-- Hero Section -->
     <section
-      class="flex flex-col items-center justify-center text-center mt-20"
+      class="flex flex-col items-center justify-center text-center mt-12 sm:mt-20 px-4"
     >
       <span
-        class="bg-indigo-100 text-indigo-600 px-4 py-1 rounded-full text-sm mb-6 flex items-center gap-2 mx-auto w-fit"
+        class="bg-indigo-100 text-indigo-600 px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm mb-4 sm:mb-6 flex items-center gap-2 mx-auto w-fit"
       >
         🌈️ Acme Productivity App
       </span>
-      <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4">
+      <h1
+        class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-2 sm:mb-4"
+      >
         Boost Your <span class="text-indigo-500">Productivity</span>
       </h1>
-      <p class="text-lg text-gray-700 mb-8">
+      <p class="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
         Streamline your workflow with our all-in-one productivity app.
       </p>
       <button
-        class="bg-gray-900 text-white px-8 py-3 rounded-xl font-medium hover:bg-gray-800 transition"
+        class="bg-gray-900 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-xl font-medium hover:bg-gray-800 transition text-sm sm:text-base"
       >
         Start Free Trial
       </button>
     </section>
 
     <!-- Feature Section -->
-    <section class="w-full flex justify-center mt-16">
-      <div class="flex flex-col md:flex-row gap-6 w-[95%] max-w-5xl">
+    <section class="w-full flex justify-center mt-10 sm:mt-16 px-2">
+      <div
+        class="flex flex-col md:flex-row gap-4 sm:gap-6 w-full sm:w-[95%] max-w-2xl sm:max-w-5xl"
+      >
         <!-- Card 1 -->
-        <div class="flex-1 bg-blue-100 rounded-2xl p-8 flex flex-col gap-4">
+        <div
+          class="flex-1 bg-blue-100 rounded-2xl p-5 sm:p-8 flex flex-col gap-2 sm:gap-4"
+        >
           <div
-            class="w-10 h-10 flex items-center justify-center bg-white rounded-lg"
+            class="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center bg-white rounded-lg"
           >
-            <span class="text-xl text-indigo-500">🚀</span>
+            <span class="text-lg sm:text-xl text-indigo-500">🚀</span>
           </div>
-          <h3 class="font-bold text-xl text-gray-900">Streamlined Workflows</h3>
-          <p class="text-gray-700 text-sm">
+          <h3 class="font-bold text-lg sm:text-xl text-gray-900">
+            Streamlined Workflows
+          </h3>
+          <p class="text-gray-700 text-xs sm:text-sm">
             Automate repetitive tasks and focus on high-impact work with our
             powerful productivity features.
           </p>
         </div>
         <!-- Card 2 -->
-        <div class="flex-1 bg-indigo-100 rounded-2xl p-8 flex flex-col gap-4">
+        <div
+          class="flex-1 bg-indigo-100 rounded-2xl p-5 sm:p-8 flex flex-col gap-2 sm:gap-4"
+        >
           <div
-            class="w-10 h-10 flex items-center justify-center bg-white rounded-lg"
+            class="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center bg-white rounded-lg"
           >
-            <span class="text-xl text-indigo-600">📈</span>
+            <span class="text-lg sm:text-xl text-indigo-600">📈</span>
           </div>
-          <h3 class="font-bold text-xl text-gray-900">
+          <h3 class="font-bold text-lg sm:text-xl text-gray-900">
             Blazing Fast Performance
           </h3>
-          <p class="text-gray-700 text-sm">
+          <p class="text-gray-700 text-xs sm:text-sm">
             Experience lightning-fast performance and instant responsiveness
             with our cutting-edge technology.
           </p>
         </div>
         <!-- Card 3 -->
-        <div class="flex-1 bg-purple-100 rounded-2xl p-8 flex flex-col gap-4">
+        <div
+          class="flex-1 bg-purple-100 rounded-2xl p-5 sm:p-8 flex flex-col gap-2 sm:gap-4"
+        >
           <div
-            class="w-10 h-10 flex items-center justify-center bg-white rounded-lg"
+            class="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center bg-white rounded-lg"
           >
-            <span class="text-xl text-indigo-500">😊</span>
+            <span class="text-lg sm:text-xl text-indigo-500">😊</span>
           </div>
-          <h3 class="font-bold text-xl text-gray-900">Intuitive Interface</h3>
-          <p class="text-gray-700 text-sm">
+          <h3 class="font-bold text-lg sm:text-xl text-gray-900">
+            Intuitive Interface
+          </h3>
+          <p class="text-gray-700 text-xs sm:text-sm">
             Our user-friendly interface makes it easy for anyone to streamline
             their workflow.
           </p>
@@ -99,38 +115,44 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="flex justify-center mt-20">
+    <section class="flex justify-center mt-12 sm:mt-20 px-2">
       <div
-        class="bg-white/90 rounded-2xl shadow-md w-[95%] max-w-5xl p-12 flex flex-col items-center"
+        class="bg-white/90 rounded-2xl shadow-md w-full sm:w-[95%] max-w-xl sm:max-w-5xl p-6 sm:p-12 flex flex-col items-center"
       >
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center"
+        >
           Get in Touch
         </h2>
-        <form class="w-full max-w-xl flex flex-col gap-4">
+        <form class="w-full flex flex-col gap-3 sm:gap-4">
           <div>
-            <label class="block text-gray-700 mb-1" for="name">Name</label>
+            <label class="block text-gray-700 mb-1 text-sm" for="name"
+              >Name</label
+            >
             <input
-              class="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-100"
+              class="w-full px-3 sm:px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-100 text-sm"
               type="text"
               id="name"
               placeholder="John Doe"
             />
           </div>
           <div>
-            <label class="block text-gray-700 mb-1" for="email">Email</label>
+            <label class="block text-gray-700 mb-1 text-sm" for="email"
+              >Email</label
+            >
             <input
-              class="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-100"
+              class="w-full px-3 sm:px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-100 text-sm"
               type="email"
               id="email"
               placeholder="john@example.com"
             />
           </div>
           <div>
-            <label class="block text-gray-700 mb-1" for="message"
+            <label class="block text-gray-700 mb-1 text-sm" for="message"
               >Message</label
             >
             <textarea
-              class="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-100"
+              class="w-full px-3 sm:px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-100 text-sm"
               id="message"
               rows="4"
               placeholder="Your message..."
@@ -138,7 +160,7 @@
           </div>
           <button
             type="submit"
-            class="bg-gray-900 text-white py-3 rounded-lg font-medium mt-4 hover:bg-gray-800 transition"
+            class="bg-gray-900 text-white py-2 sm:py-3 rounded-lg font-medium mt-3 sm:mt-4 hover:bg-gray-800 transition text-sm sm:text-base"
           >
             Submit
           </button>
@@ -148,10 +170,10 @@
 
     <!-- Footer -->
     <footer
-      class="w-full flex justify-between items-center px-20 py-10 mt-16 text-gray-600 text-sm"
+      class="w-full flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-2 sm:gap-0 px-4 sm:px-20 py-6 sm:py-10 mt-10 sm:mt-16 text-gray-600 text-xs sm:text-sm text-center"
     >
       <span>Acme productivity app ©2024</span>
-      <nav class="flex gap-8">
+      <nav class="flex flex-col sm:flex-row gap-2 sm:gap-8 mt-2 sm:mt-0">
         <a href="#" class="hover:underline">FAQ</a>
         <a href="#" class="hover:underline">Terms</a>
         <a href="#" class="hover:underline">AI Policy</a>
